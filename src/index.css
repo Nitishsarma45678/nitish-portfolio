@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base: #FDFCF0;      /* Parchment / Cream */
+  --color-forest: #1B4332;    /* Deep Green */
+  --color-sage: #B7E4C7;      /* Soft Accent Green */
+  --color-clay: #CB997E;      /* Earthy Tone */
+  
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: var(--color-base);
+  color: var(--color-forest);
+  font-family: var(--font-mono);
+  overflow-x: hidden;
+}
+
+/* Custom class for poetic serif text */
+.font-poetic {
+  font-family: var(--font-serif);
+}
+
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Force-hide the system cursor on everything, even interactive elements */
+*, *::before, *::after {
+  cursor: none !important;
+}
+
+/* Optional: If you want the cursor to come back if the React app fails to load */
+html {
+  cursor: none;
+}
