@@ -12,6 +12,7 @@ function App() {
     <div className="min-h-screen selection:bg-sage selection:text-forest relative md:cursor-none">
       <CustomCursor /> 
       
+      
       <main className="max-w-5xl mx-auto px-6 py-12 md:py-24">
         <Hero />
         <Gallery />

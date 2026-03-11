@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { BookOpen, Briefcase, GraduationCap, ArrowUpRight } from "lucide-react";
+import { BookOpen, Briefcase, GraduationCap, ArrowUpRight, Cpu } from "lucide-react";
 
 export default function Journal() {
   return (
@@ -29,7 +29,7 @@ export default function Journal() {
           <div className="space-y-10 text-forest/80 leading-relaxed text-lg italic">
             <p className="relative">
               <span className="float-left text-7xl font-poetic text-clay mr-4 mt-2 leading-[0.8]">M</span>
-              y approach to frontend development is much like <span className="text-forest font-bold italic">writing a poem</span>,every line of code should have purpose, rhythm, and elegance.
+              y approach to frontend development is much like <span className="text-forest font-bold italic">writing a poem</span>, every line of code should have purpose, rhythm, and elegance.
             </p>
             
             <p>
@@ -67,11 +67,6 @@ export default function Journal() {
 
             {/* CURRENT FOCUS & ROOTS */}
             <div className="space-y-6 not-italic">
-
-              {/* <p className="text-forest font-medium flex items-center gap-4">
-                <span className="h-[1px] w-8 bg-clay/30"></span>
-                Currently exploring the architectural depths of <span className="text-clay italic font-poetic text-2xl ml-1">Next.js</span>
-              </p> */}
               <div className="space-y-4 pt-4 border-t border-forest/5">
                 <p className="font-poetic text-2xl text-forest/90 leading-snug">
                   When I am away from the screen, I find balance in <span className="text-clay">nature</span> and getting lost in <span className="text-clay">music</span>.
@@ -85,7 +80,7 @@ export default function Journal() {
           </div>
         </motion.div>
 
-        {/* Timeline / Experience Section (Right side stays same) */}
+        {/* Timeline / Experience Section */}
         <motion.div 
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -93,6 +88,22 @@ export default function Journal() {
           transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
           className="space-y-12"
         >
+
+          {/* Gurukul Group */}
+          <div className="flex gap-6 group">
+            <div className="flex flex-col items-center">
+              <div className="w-10 h-10 rounded-full border border-forest/10 flex items-center justify-center group-hover:border-clay/40 transition-colors">
+                <Cpu className="w-5 h-5 text-clay shrink-0 transition-transform group-hover:scale-110" />
+              </div>
+              <div className="w-[1px] h-full bg-forest/10 mt-4"></div>
+            </div>
+            <div className="pb-8">
+              <h3 className="font-poetic text-2xl text-forest">Gurukul Group of Educational Wing</h3>
+              <p className="text-sm text-forest/60 mb-3 uppercase tracking-widest font-semibold">TGT Teacher — AI & Coding • 2026</p>
+              <p className="text-forest/80 text-sm leading-relaxed">Mentoring students in programming and hands-on software development and building practical AI applications, alongside foundational robotics concepts within the Innovation Lab.</p>
+            </div>
+          </div>
+
           {/* Sysfore */}
           <div className="flex gap-6 group">
             <div className="flex flex-col items-center">
@@ -103,7 +114,7 @@ export default function Journal() {
             </div>
             <div className="pb-8">
               <h3 className="font-poetic text-2xl text-forest">Sysfore Technologies</h3>
-              <p className="text-sm text-forest/60 mb-3 uppercase tracking-widest font-semibold">Associate Software Engineer Trainee • 2025</p>
+              <p className="text-sm text-forest/60 mb-3 uppercase tracking-widest font-semibold">Associate Software Engineer • 2025</p>
               <p className="text-forest/80 text-sm leading-relaxed">Developed end-to-end solutions across Power Platform and designed scalable Dataverse data models.</p>
             </div>
           </div>
