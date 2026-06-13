@@ -37,33 +37,43 @@ export default function Journal() {
             </p>
 
             {/* CLICKABLE FORMAL PUBLICATION CARD */}
-            <a 
-              href="/Publication.pdf" /* Put your paper link or PDF path here */
-              target="_blank"
-              rel="noreferrer"
-              className="group block relative p-6 bg-sage/5 border border-forest/10 rounded-2xl not-italic transition-all duration-500 hover:bg-sage/10 hover:border-clay/30 hover:shadow-xl hover:shadow-forest/5"
-            >
-              <div className="flex justify-between items-start mb-3">
-                <span className="text-[10px] uppercase tracking-[0.2em] text-clay font-bold bg-clay/10 px-2 py-1 rounded">
-                  Selected Publication
-                </span>
-                <ArrowUpRight className="w-4 h-4 text-clay opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-              </div>
-              
-              <h4 className="font-poetic text-xl text-forest mb-2 leading-tight group-hover:text-clay transition-colors duration-500">
-                "Host-Based Intrusion Detection Systems: Architectures and Implementation"
-              </h4>
-              
-              <p className="text-sm text-forest/60 font-mono italic mb-6">
-                Published Research Paper • Technical Analysis & Research
-              </p>
+{/* FORMAL PUBLICATION CARD - VERIFIED & ESCI INDEXED */}
+<a 
+  href="https://www.tarupublications.com/doi/10.47974/JIOS-1981" 
+  target="_blank"
+  rel="noreferrer"
+  className="group block relative p-6 bg-sage/5 border border-forest/10 rounded-2xl not-italic transition-all duration-500 hover:bg-sage/10 hover:border-clay/30 hover:shadow-xl hover:shadow-forest/5"
+>
+  <div className="flex justify-between items-start mb-3">
+    <div className="flex flex-wrap gap-2">
+      <span className="text-[10px] uppercase tracking-[0.2em] text-clay font-bold bg-clay/10 px-2 py-1 rounded">
+        Published Paper
+      </span>
+      <span className="text-[10px] uppercase tracking-[0.2em] text-forest font-bold bg-forest/10 px-2 py-1 rounded">
+        Web of Science (ESCI) Indexed
+      </span>
+    </div>
+    <ArrowUpRight className="w-4 h-4 text-clay opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+  </div>
+  
+  <h4 className="font-poetic text-xl text-forest mb-3 leading-tight group-hover:text-clay transition-colors duration-500">
+    "Innovative Host-Based Intrusion Detection Systems: Safeguarding Networks in the Digital Era"
+  </h4>
+  
+  <div className="space-y-2 mb-6">
+    <p className="text-sm text-forest/70 font-medium">
+      Journal of Information and Optimization Sciences
+    </p>
+    <p className="text-[11px] text-forest/50 font-mono uppercase tracking-wider">
+      Taru Publications • DOI: 10.47974/JIOS-1981 • ISSN: 0252-2667
+    </p>
+  </div>
 
-              {/* The "Animated Line" Indicator */}
-              <div className="flex items-center gap-2 text-xs font-bold text-forest/40 group-hover:text-forest transition-colors duration-500">
-                <div className="w-8 h-[1px] bg-forest/20 group-hover:w-16 group-hover:bg-clay transition-all duration-700 ease-in-out"></div>
-                VIEW ARCHITECTURE
-              </div>
-            </a>
+  <div className="flex items-center gap-2 text-xs font-bold text-forest/40 group-hover:text-forest transition-colors duration-500">
+    <div className="w-8 h-[1px] bg-forest/20 group-hover:w-16 group-hover:bg-clay transition-all duration-700 ease-in-out"></div>
+    READ PUBLISHED PAPER
+  </div>
+</a>
 
             {/* CURRENT FOCUS & ROOTS */}
             <div className="space-y-6 not-italic">
@@ -89,20 +99,26 @@ export default function Journal() {
           className="space-y-12"
         >
 
-          {/* Gurukul Group */}
-          <div className="flex gap-6 group">
-            <div className="flex flex-col items-center">
-              <div className="w-10 h-10 rounded-full border border-forest/10 flex items-center justify-center group-hover:border-clay/40 transition-colors">
-                <Cpu className="w-5 h-5 text-clay shrink-0 transition-transform group-hover:scale-110" />
-              </div>
-              <div className="w-[1px] h-full bg-forest/10 mt-4"></div>
-            </div>
-            <div className="pb-8">
-              <h3 className="font-poetic text-2xl text-forest">Gurukul Group of Educational Wing</h3>
-              <p className="text-sm text-forest/60 mb-3 uppercase tracking-widest font-semibold">TGT Teacher — AI & Coding • 2026</p>
-              <p className="text-forest/80 text-sm leading-relaxed">Mentoring students in programming and hands-on software development and building practical AI applications, alongside foundational robotics concepts within the Innovation Lab.</p>
-            </div>
-          </div>
+{/* Assam Down Town University - Guest Professor */}
+<div className="flex gap-6 group">
+  <div className="flex flex-col items-center">
+    <div className="w-10 h-10 rounded-full border border-forest/10 flex items-center justify-center group-hover:border-clay/40 transition-colors bg-sage/5">
+      <GraduationCap className="w-5 h-5 text-clay shrink-0 transition-transform group-hover:scale-110" />
+    </div>
+    <div className="w-[1px] h-full bg-forest/10 mt-4"></div>
+  </div>
+  <div className="pb-8">
+    <h3 className="font-poetic text-2xl text-forest group-hover:text-clay transition-colors duration-300">
+      Assam Down Town University
+    </h3>
+    <p className="text-sm text-forest/60 mb-3 uppercase tracking-widest font-semibold">
+      Guest Professor — Computer Science & Engineering • 2026 — Present
+    </p>
+    <p className="text-forest/80 text-sm leading-relaxed max-w-md">
+      Lecturing on modern frontend frameworks, advanced system design, and mentoring the next generation of engineers in translating software logic into impactful digital architectures.
+    </p>
+  </div>
+</div>
 
           {/* Sysfore */}
           <div className="flex gap-6 group">
@@ -128,7 +144,7 @@ export default function Journal() {
               <div className="w-[1px] h-full bg-forest/10 mt-4"></div>
             </div>
             <div className="pb-8">
-              <h3 className="font-poetic text-2xl text-forest">Kristu Jayanti College</h3>
+              <h3 className="font-poetic text-2xl text-forest">Kristu Jayanti University</h3>
               <p className="text-sm text-forest/60 mb-3 uppercase tracking-widest font-semibold">Master of Computer Science • 2023 — 2025</p>
               <p className="text-forest/80 text-sm leading-relaxed">Built my core foundations in software engineering, networking, and algorithms.</p>
             </div>
